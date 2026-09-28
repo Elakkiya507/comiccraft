@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ComicCraft</title>
+</head>
+
+<body>
+
+<h1>ComicCraft</h1>
+
+<form action="/download-comic" method="post" enctype="multipart/form-data">
+
+    <h2>Story Name</h2>
+    <input type="text" name="story_name" required>
+
+    <h2>Theme</h2>
+    <input type="text" name="theme" required>
+
+    <h2>Main Character</h2>
+    <input type="text" name="main_character" required>
+
+    <h2>Setting</h2>
+    <input type="text" name="setting" required>
+
+    <h2>Tone</h2>
+    <input type="text" name="tone" required>
+
+    <h2>Art Style</h2>
+    <input type="text" name="art_style" required>
+
+    <h2>Story Idea</h2>
+    <textarea name="prompt" rows="8" cols="50" required></textarea>
+
+    <h2>Upload Panel Photos</h2>
+
+    <p>Panel 1</p>
+    <input type="file" name="panel1" accept="image/*">
+
+    <p>Panel 2</p>
+    <input type="file" name="panel2" accept="image/*">
+
+    <p>Panel 3</p>
+    <input type="file" name="panel3" accept="image/*">
+
+    <p>Panel 4</p>
+    <input type="file" name="panel4" accept="image/*">
+
+    <p>Panel 5</p>
+    <input type="file" name="panel5" accept="image/*">
+
+    <br><br>
+
+    <button type="submit">Download Comic</button>
+
+</form>
+
+</body>
+</html>
